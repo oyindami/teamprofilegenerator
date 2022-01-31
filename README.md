@@ -38,7 +38,7 @@ This appplication is used by a company's managre to view enter employess into fi
 
 ## Links
 [deployed-site] (https://oyindami.github.io/Passwrod-creator-/)
-[github-repo] (https://github.com/oyindami/Passwrod-creator-)
+[github-repo] (https://github.com/oyindami/teamprofilegenerator)
 [walkthroughvideo] (https://watch.screencastify.com/v/WJ7dzqFpOLisyynGYMkp)
 
 ## Contact me
