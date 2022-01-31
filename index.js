@@ -138,7 +138,7 @@ function que(arrayQue, employeeType) {
 }
 //To generate the HTML file
 function htmlMaker(arrayList) {
-  fs.writeFile("./dist/index.html", generateHTML(arrayList), (err) =>
+  fs.writeFile("./index.html", generateHTML(arrayList), (err) =>
     err ? console.log(err) : console.log("Success!")
   );
 }
