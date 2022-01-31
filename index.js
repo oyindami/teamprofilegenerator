@@ -1,9 +1,9 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const Engineer = require("//file for engineer");
-const Employee = require("//file for engineer");
-const Manager = require("//file for engineer");
-const Intern = require("//file for engineer");
+const Engineer = require("./lib/Engineer.js");
+// const Employee = require("../lib/Employee.js");
+const Manager = require("./lib/Manager.js");
+const Intern = require("./lib/Intern.js");
 const generateHTML = require("./src/generateHTML");
 
 var newPeople = []; //holder for everyone
@@ -11,22 +11,22 @@ var newPeople = []; //holder for everyone
 const EngineerPrompts = [
   {
     type: "input",
-    message: "What is your name?",
+    message: "What is the Engineer's name?",
     name: "name",
   },
   {
-    type: "number",
-    message: "What is your ID?",
+    type: "input",
+    message: "What is the Engineer's ID?",
     name: "ID",
   },
   {
     type: "input",
-    message: "What is your Email?",
+    message: "What is the Engineer's Email?",
     name: "Email",
   },
   {
     type: "input",
-    message: "What is your GitHub?",
+    message: "What is the Engineer's GitHub?",
     name: "GitHubUsername",
   },
 ];
@@ -37,7 +37,7 @@ const MangerPrompts = [
     name: "name",
   },
   {
-    type: "number",
+    type: "input",
     message: "What is your ID?",
     name: "ID",
   },
@@ -56,22 +56,22 @@ const MangerPrompts = [
 const InternPrompts = [
   {
     type: "input",
-    message: "What is your name?",
+    message: "What is the Intern's name?",
     name: "name",
   },
   {
-    type: "number",
-    message: "What is your ID?",
+    type: "input",
+    message: "What is the Intern's ID?",
     name: "ID",
   },
   {
     type: "input",
-    message: "What is your Email?",
+    message: "What is the Intern's  Email?",
     name: "Email",
   },
   {
     type: "input",
-    messsage: "What school did you attend?",
+    messsage: "What school did the Intern's  attend?",
     name: "school",
   },
 ];
@@ -135,7 +135,7 @@ function que(arrayQue, employeeType) {
 }
 //To generate the HTML file
 function htmlMaker(arrayList) {
-  fs.writeFile("../dist/index.html", generateHTML(arrayList), (err) =>
+  fs.writeFile("./dist/index.html", generateHTML(arrayList), (err) =>
     err ? console.log(err) : console.log("Success!")
   );
 }
