@@ -1,4 +1,4 @@
-const Intern = require("./lib/Intern.js"); //inquiring the engineer.js file
+const Intern = require("../lib/Intern"); //inquiring the engineer.js file
 
 //need github username constructor for engineer
 describe("Intern", () => {

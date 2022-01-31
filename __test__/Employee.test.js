@@ -1,4 +1,4 @@
-const Employee = require("./lib/Employee.js"); //inquiring the employee.js file
+const Employee = require("../lib/Employee"); //inquiring the employee.js file
 
 describe("Employee", () => {
   test("set the name", () => {

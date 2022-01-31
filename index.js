@@ -2,9 +2,12 @@ const inquirer = require("inquirer");
 const fs = require("fs");
 const Engineer = require("./lib/Engineer.js");
 // const Employee = require("../lib/Employee.js");
+
+const generateHTML = require("./src/generateHTML");
 const Manager = require("./lib/Manager.js");
 const Intern = require("./lib/Intern.js");
-const generateHTML = require("./src/generateHTML");
+
+const console = require("console");
 
 var newPeople = []; //holder for everyone
 //prompts request for the classes//
@@ -17,12 +20,12 @@ const EngineerPrompts = [
   {
     type: "input",
     message: "What is the Engineer's ID?",
-    name: "ID",
+    name: "id",
   },
   {
     type: "input",
     message: "What is the Engineer's Email?",
-    name: "Email",
+    name: "email",
   },
   {
     type: "input",
@@ -39,17 +42,17 @@ const MangerPrompts = [
   {
     type: "input",
     message: "What is your ID?",
-    name: "ID",
+    name: "id",
   },
   {
     type: "input",
     message: "What is your Email?",
-    name: "Email",
+    name: "email",
   },
   {
     type: "input",
     message: "What is your Office number?",
-    name: "OfficeNumber",
+    name: "officeNumber",
   },
 ];
 
@@ -62,12 +65,12 @@ const InternPrompts = [
   {
     type: "input",
     message: "What is the Intern's ID?",
-    name: "ID",
+    name: "id",
   },
   {
     type: "input",
     message: "What is the Intern's  Email?",
-    name: "Email",
+    name: "email",
   },
   {
     type: "input",
