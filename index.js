@@ -52,7 +52,7 @@ const MangerPrompts = [
   {
     type: "input",
     message: "What is your Office number?",
-    name: "officeNumber",
+    name: "OfficeNumber",
   },
 ];
 
@@ -99,8 +99,8 @@ function menu() {
       questions = EngineerPrompts;
       que(questions, "Engineer");
     } else if (data.add === "Intern") {
-      questions = InternQues;
-      que(questions, "InternPrompts");
+      questions = InternPrompts;
+      que(questions, "Intern");
     } else {
       console.log("List: ", newPeople);
       htmlMaker(newPeople);

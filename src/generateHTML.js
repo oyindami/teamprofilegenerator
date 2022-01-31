@@ -15,7 +15,7 @@ function generateHTML(data) {
         cardlist = `<li class="list-group-item GitHubUsername">GitHubUsername: ${card.getGitHubUsername()}</a></li>`;
         console.log("CardList: " + cardlist);
       } else {
-        cardlist = `<li class="list-group-item school">School: ${card.getSchool()}</a></li>`;
+        cardlist = `<li class="list-group-item school">School: ${card.getschool()}</a></li>`;
         console.log("CardList: " + cardlist);
       }
       //making a card and adding this to the already existing cards
